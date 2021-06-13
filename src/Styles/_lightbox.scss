@@ -21,10 +21,15 @@
 }
 .lightbox__message::before {
     content: '';
-    width: 100%;
+    width: 10%;
     position: absolute;
     height: 5px;
     background-color: $persian-green;
     bottom: 0;
-    right: 0;
+    left: 0;
+    animation: load 5s normal backwards;
 }
+@keyframes load {
+    0% { width: 100%; }
+    100% { width: 0; }
+  }
