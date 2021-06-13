@@ -16,8 +16,8 @@ const Navbar = ({setCompany}) => {
             <ul className="nav__list">
                 {
                     NavigationData.map( (item)=> (
-                        <li key={item.id} className="nav__item">
-                            <a className="nav__link" href="#" onClick={()=>{navClick(item.name)}}>{item.name}</a>
+                        <li key={item.id} className="nav__item" >
+                            <div className="nav__link" onClick={ ()=>{navClick(item.name)} }>{item.name}</div>
                         </li>
                     ) )
                 }

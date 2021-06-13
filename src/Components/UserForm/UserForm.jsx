@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../../Styles/_userForm.scss'
-import {set, useForm} from 'react-hook-form'
+import {useForm} from 'react-hook-form'
 import { ErrorMessage } from '@hookform/error-message';
 import Lightbox from '../Lightbox/Lightbox.jsx'
 
@@ -35,7 +35,7 @@ const UserForm = ({comany}) => {
     return (
         <section className="section__form">
             {lightbox ? <Lightbox message='Tu información fue enviada con éxito, estaremos en contacto contigo.' /> : ''}
-            <h2 className="title_h2">{comany == '' ? 'Elige una aerolinea del menú' : `Gracias por elegir "${comany}"`}</h2>
+            <h2 className="title_h2">{comany === '' ? 'Elige una aerolinea del menú' : `Gracias por elegir "${comany}"`}</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
                 <label htmlFor="name">
                     Nombre:
