@@ -1,0 +1,39 @@
+@import './colors';
+
+.section__form {
+    
+    margin: 2rem 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.form {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.title_h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+label {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+input, select {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid $middle-blue-green;
+}
+.form__error {
+    color: $error;
+}
+.form__button {
+    background-color: $persian-green;
+    color: $snow;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid $middle-blue-green;
+    border-radius: 10px;
+    width: 100%;
+}
