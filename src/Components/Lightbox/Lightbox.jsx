@@ -1,15 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../../Styles/_lightbox.scss'
 
-const Lightbox = ({lightboxMode}) => {
+const Lightbox = ({message}) => {
 
-    const [lightbox, setLightbox] = useState(false)
+    // const [visible, setVisible] = useState(true)
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //       setVisible(false);
+    //     }, delay);
+    //   }, [delay]);
+
     return (
         <div className="lightbox">
             <div className="lightbox__message">
-                <p>Mensaje</p>
+                <p>{message}</p>
             </div>
         </div>
+        
     )
 }
 
