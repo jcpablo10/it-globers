@@ -1,0 +1,29 @@
+@import './colors';
+
+.lightbox {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,.8);
+    backdrop-filter: blur(2px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.lightbox__message {
+    background-color: $snow;
+    color: $eerie-black;
+    padding: 1rem;
+    position: relative;
+}
+.lightbox__message::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 5px;
+    background-color: $persian-green;
+    bottom: 0;
+    right: 0;
+}

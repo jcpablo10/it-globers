@@ -3,9 +3,13 @@ import '../../Styles/_navbar.scss'
 import navData from './navigationData.json'
 
 
-const Navbar = () => {
+const Navbar = ({setCompany}) => {
 
     const { NavigationData } = navData;
+
+    const navClick = (name) => {
+        setCompany(name)
+    }
 
     return (
         <nav className="nav">
@@ -13,7 +17,7 @@ const Navbar = () => {
                 {
                     NavigationData.map( (item)=> (
                         <li key={item.id} className="nav__item">
-                            <a className="nav__link" href="#">{item.name}</a>
+                            <a className="nav__link" href="#" onClick={()=>{navClick(item.name)}}>{item.name}</a>
                         </li>
                     ) )
                 }

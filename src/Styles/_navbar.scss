@@ -1,11 +1,13 @@
+@import './colors';
+
 $padding_v: 1rem;
 $padding_h: 2rem;
 
 .nav {
     // border: 1px solid red;
     height: auto;
-    background: rgba(0,0,0,.3);
-    position: fixed;
+    background: $persian-green;
+    // position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
@@ -27,13 +29,14 @@ $padding_h: 2rem;
 .nav__link {
     padding: $padding_v $padding_h;
     // border: 1px solid green;
-    color: white;
+    color: $snow;
     transition: .3s all;
-    
+    font-weight: 800;
+    text-decoration: none;
 }
 .nav__link:hover {
     // background-color: yellow;
-    color: yellowgreen;
+    color: $eerie-black;
     transition: .3s all;
     transform: translateY(10);
     cursor: pointer;
