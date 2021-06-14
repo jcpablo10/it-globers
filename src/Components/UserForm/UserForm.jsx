@@ -20,6 +20,9 @@ const UserForm = ({comany}) => {
     const {register, formState: { errors }, handleSubmit} = useForm();
 
     const onSubmit = (data,event) => {
+
+        console.log(data)
+        
         event.target.reset();
 
         setLightbox(true)
